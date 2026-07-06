@@ -1,0 +1,90 @@
+import mongoose from 'mongoose';
+
+const userSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+        trim: true
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true,
+        lowercase: true,
+        trim: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    profilePic: {
+        type: String,
+        default: ''
+    },
+    isVerified: {
+        type: Boolean,
+        default: false,
+        index: true // Index for efficient queries on unverified users
+    },
+    otp: {
+        type: String,
+        select: false // Don't include OTP in queries by default for security
+    },
+    otpExpiry: {
+        type: Date,
+        select: false, // Don't include OTP expiry in queries by default
+        index: true // Index for efficient cleanup queries
+    },
+    lastOTPSentAt: {
+        type: Date,
+        select: false // Track when OTP was last sent for accurate rate limiting
+    },
+    resetPasswordOTP: {
+        type: String,
+        select: false // OTP for password reset
+    },
+    resetPasswordOTPExpiry: {
+        type: Date,
+        select: false // Expiry time for reset password OTP
+    },
+    lastResetOTPSentAt: {
+        type: Date,
+        select: false // Track when reset OTP was last sent for rate limiting
+    },
+    // E2EE key material (zero-knowledge — server stores opaque blobs)
+    publicKey: {
+        type: String,       // base64-encoded 32-byte nacl.box public key
+        default: null
+    },
+    encryptedPrivateKey: {
+        type: String,       // base64-encoded AES-GCM ciphertext of secret key
+        default: null
+    },
+    keyIv: {
+        type: String,       // base64-encoded 12-byte AES-GCM IV
+        default: null
+    },
+    keySalt: {
+        type: String,       // base64-encoded 16-byte PBKDF2 salt
+        default: null
+    },
+    contacts: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    }]
+    // Note: Mongoose automatically initializes array fields as [] if not provided
+}, {
+    timestamps: true
+});
+
+// Method to exclude password when converting to JSON
+// This method is called when the user document is converted to JSON (e.g., when sending a response). It removes the password field from the output, ensuring that sensitive information is not exposed in API responses.
+userSchema.methods.toJSON = function() {
+    const user = this.toObject();
+    delete user.password;
+    return user;
+};
+
+const User = mongoose.model('User', userSchema);
+
+export default User;
