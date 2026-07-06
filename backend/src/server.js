@@ -22,6 +22,13 @@ app.use(cors({
     : config.clientUrl,
   credentials: true,
 }));
+
+// Security headers
+app.use((_req, res, next) => {
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  next();
+});
 app.use(express.json({ limit: '15mb' })); // Middleware to parse JSON bodies (increased for image uploads)
 app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-encoded bodies
 app.use(cookieParser()); // Middleware to parse cookies
