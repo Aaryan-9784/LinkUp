@@ -275,7 +275,7 @@ export default function AuthPage() {
           {/* Mobile-only brand */}
           <div className="auth-mobile-brand" style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', marginBottom: '24px' }}>
             <Logo size={32} />
-            <span className="auth-left__name" style={{ fontSize: '1.3rem' }}>LinkUp</span>
+            <span className="auth-left__name" style={{ fontSize: '1.3rem', color: 'var(--text-primary)' }}>LinkUp</span>
           </div>
 
           {/* Tab switcher */}

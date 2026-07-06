@@ -305,7 +305,7 @@
   gap: 1.5rem;
 }
 
-/* Mobile brand - hidden on desktop */
+/* Mobile brand - hidden on desktop when left panel shows brand */
 .auth-mobile-brand {
   display: none;
   align-items: center;
