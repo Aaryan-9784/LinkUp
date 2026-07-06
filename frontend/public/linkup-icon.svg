@@ -1,0 +1,13 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rounded square -->
+  <rect x="6" y="6" width="108" height="108" rx="28" fill="#3b82f6" />
+
+  <!-- Chain link left -->
+  <rect x="18" y="44" width="38" height="32" rx="16" fill="none" stroke="#ffffff" stroke-width="9" />
+
+  <!-- Chain link right -->
+  <rect x="64" y="44" width="38" height="32" rx="16" fill="none" stroke="#ffffff" stroke-width="9" />
+
+  <!-- Overlap connector -->
+  <rect x="55" y="51" width="10" height="18" fill="#3b82f6" />
+</svg>

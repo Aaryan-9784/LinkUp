@@ -36,7 +36,7 @@ export default function EmptyChat() {
         </motion.div>
 
         <h2 className="empty-chat__greeting">{greeting}</h2>
-        <h3 className="empty-chat__title">Welcome to Relay</h3>
+        <h3 className="empty-chat__title">Welcome to LinkUp</h3>
         <p className="empty-chat__description">
           Select a contact from the sidebar to start a conversation.
         </p>

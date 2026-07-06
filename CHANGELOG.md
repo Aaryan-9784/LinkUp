@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Relay Chat App will be documented in this file.
+All notable changes to LinkUp Chat App will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Busy/unavailable/offline detection
 - **WebRTC Signaling**: Socket.IO-based signaling for call lifecycle
   - SDP offer/answer exchange
-  - ICE candidate relay
+  - ICE candidate LinkUp
   - Media toggle notifications (mute/camera state sync)
   - Active call tracking to prevent duplicate calls
   - Disconnect cleanup with peer notification
@@ -145,13 +145,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 1. **Backup existing database** (if you want to preserve data for reference)
    ```bash
-   mongodump --db relay --out backup/v1.1.0/
+   mongodump --db LinkUp --out backup/v1.1.0/
    ```
 
 2. **Clear database** or drop collections:
    ```bash
    # MongoDB Shell
-   use relay
+   use LinkUp
    db.users.drop()
    db.messages.drop()
    db.contactrequests.drop()

@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "2.1.0",
-  "description": "backend for relay chat app",
+  "description": "backend for linkup chat app",
   "license": "ISC",
   "author": "the GOAT rudra sanandiya",
   "type": "module",

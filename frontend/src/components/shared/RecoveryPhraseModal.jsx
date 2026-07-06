@@ -122,7 +122,7 @@ export default function RecoveryPhraseModal({ phrase, onConfirm }) {
             disabled={!confirmed}
             onClick={() => onConfirm()}
           >
-            Continue to Relay
+            Continue to LinkUp
           </Button>
         </motion.div>
       </motion.div>

@@ -1,5 +1,5 @@
 /**
- * E2EE Crypto Utilities for Relay
+ * E2EE Crypto Utilities for LinkUp
  *
  * Pure functions — no React dependencies.
  * Uses:

@@ -20,7 +20,7 @@ export function createResetPasswordEmailTemplate(name, otp) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="x-apple-disable-message-reformatting">
-  <title>Reset Your Password - Relay</title>
+  <title>Reset Your Password - LinkUp</title>
   <style type="text/css">
     body, html { margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #0a0a0b; }
     * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box; }
@@ -65,10 +65,10 @@ export function createResetPasswordEmailTemplate(name, otp) {
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
               <tr>
                 <td style="padding-right:12px; vertical-align:middle;">
-                  <img src="https://res.cloudinary.com/dgnjy0uy9/image/upload/v1774601941/relay/assets/relay-icon-email.png" alt="Relay" width="44" height="44" style="display:block; border-radius:12px;" />
+                  <img src="https://res.cloudinary.com/dgnjy0uy9/image/upload/v1774601941/linkup/assets/linkup-icon-email.png" alt="LinkUp" width="44" height="44" style="display:block; border-radius:12px;" />
                 </td>
                 <td style="vertical-align:middle;">
-                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:22px; font-weight:700; color:#f0f0f0; letter-spacing:-0.3px;">Relay</span>
+                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:22px; font-weight:700; color:#f0f0f0; letter-spacing:-0.3px;">LinkUp</span>
                 </td>
               </tr>
             </table>
@@ -105,7 +105,7 @@ export function createResetPasswordEmailTemplate(name, otp) {
                 <td style="border-left:3px solid #c9a227; padding-left:16px; vertical-align:top;">
                   <p style="margin:0 0 4px 0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:11px; font-weight:700; color:#c9a227; letter-spacing:0.1em; text-transform:uppercase;">Security Notice</p>
                   <p style="margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:13px; color:#666; line-height:1.65;">
-                    Never share this code with anyone. Relay staff will never ask for your reset code.
+                    Never share this code with anyone. LinkUp staff will never ask for your reset code.
                   </p>
                 </td>
               </tr>
@@ -134,7 +134,7 @@ export function createResetPasswordEmailTemplate(name, otp) {
               <a href="#" style="color:#666; text-decoration:none; margin:0 8px;">Privacy Policy</a>
             </p>
             <p style="margin:0; text-align:center; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:11px; color:#333; line-height:1.6;">
-              &copy; 2025 Relay &nbsp;&bull;&nbsp; Sent from <a href="mailto:noreply@iamrudra.tech" style="color:#444; text-decoration:none;">noreply@iamrudra.tech</a>
+              &copy; 2025 LinkUp &nbsp;&bull;&nbsp; Sent from <a href="mailto:noreply@iamrudra.tech" style="color:#444; text-decoration:none;">noreply@iamrudra.tech</a>
             </p>
           </td>
         </tr>
@@ -163,7 +163,7 @@ export function createOTPEmailTemplate(name, otp) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="x-apple-disable-message-reformatting">
-  <title>Verify Your Email - Relay</title>
+  <title>Verify Your Email - LinkUp</title>
   <style type="text/css">
     body, html { margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #0a0a0b; }
     * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box; }
@@ -208,10 +208,10 @@ export function createOTPEmailTemplate(name, otp) {
             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
               <tr>
                 <td style="padding-right:12px; vertical-align:middle;">
-                  <img src="https://res.cloudinary.com/dgnjy0uy9/image/upload/v1774601941/relay/assets/relay-icon-email.png" alt="Relay" width="44" height="44" style="display:block; border-radius:12px;" />
+                  <img src="https://res.cloudinary.com/dgnjy0uy9/image/upload/v1774601941/linkup/assets/linkup-icon-email.png" alt="LinkUp" width="44" height="44" style="display:block; border-radius:12px;" />
                 </td>
                 <td style="vertical-align:middle;">
-                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:22px; font-weight:700; color:#f0f0f0; letter-spacing:-0.3px;">Relay</span>
+                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:22px; font-weight:700; color:#f0f0f0; letter-spacing:-0.3px;">LinkUp</span>
                 </td>
               </tr>
             </table>
@@ -248,7 +248,7 @@ export function createOTPEmailTemplate(name, otp) {
                 <td style="border-left:3px solid #c9a227; padding-left:16px; vertical-align:top;">
                   <p style="margin:0 0 4px 0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:11px; font-weight:700; color:#c9a227; letter-spacing:0.1em; text-transform:uppercase;">Security Notice</p>
                   <p style="margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:13px; color:#666; line-height:1.65;">
-                    Never share this code with anyone. Relay staff will never ask for your verification code.
+                    Never share this code with anyone. LinkUp staff will never ask for your verification code.
                   </p>
                 </td>
               </tr>
@@ -277,7 +277,7 @@ export function createOTPEmailTemplate(name, otp) {
               <a href="#" style="color:#666; text-decoration:none; margin:0 8px;">Privacy Policy</a>
             </p>
             <p style="margin:0; text-align:center; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:11px; color:#333; line-height:1.6;">
-              &copy; 2025 Relay &nbsp;&bull;&nbsp; Sent from <a href="mailto:noreply@iamrudra.tech" style="color:#444; text-decoration:none;">noreply@iamrudra.tech</a>
+              &copy; 2025 LinkUp &nbsp;&bull;&nbsp; Sent from <a href="mailto:noreply@iamrudra.tech" style="color:#444; text-decoration:none;">noreply@iamrudra.tech</a>
             </p>
           </td>
         </tr>
@@ -304,7 +304,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="x-apple-disable-message-reformatting">
-  <title>Welcome to Relay</title>
+  <title>Welcome to LinkUp</title>
   <style type="text/css">
     body, html { margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #0a0a0b; }
     * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box; }
@@ -325,7 +325,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
 
 <!-- Preheader -->
 <div style="display:none; font-size:1px; color:#0a0a0b; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden;">
-  Welcome to Relay, ${safeName} — your conversations start now. ✨
+  Welcome to LinkUp, ${safeName} — your conversations start now. ✨
 </div>
 
 <!-- Outer wrapper -->
@@ -351,10 +351,10 @@ export function createWelcomeEmailTemplate(name, clientURL) {
               <tr>
                 <!-- Logo Icon -->
                 <td style="padding-right:12px; vertical-align:middle;">
-                  <img src="https://res.cloudinary.com/dgnjy0uy9/image/upload/v1774601941/relay/assets/relay-icon-email.png" alt="Relay" width="44" height="44" style="display:block; border-radius:12px;" />
+                  <img src="https://res.cloudinary.com/dgnjy0uy9/image/upload/v1774601941/linkup/assets/linkup-icon-email.png" alt="LinkUp" width="44" height="44" style="display:block; border-radius:12px;" />
                 </td>
                 <td style="vertical-align:middle;">
-                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:22px; font-weight:700; color:#f0f0f0; letter-spacing:-0.3px;">Relay</span>
+                  <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:22px; font-weight:700; color:#f0f0f0; letter-spacing:-0.3px;">LinkUp</span>
                 </td>
               </tr>
             </table>
@@ -368,7 +368,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
               <span style="background: linear-gradient(90deg, #e6c775, #b8860b); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">${safeName}.</span>
             </h1>
             <p style="margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:16px; color:#888; line-height:1.6;">
-              You're officially part of Relay. Your first conversation is just a click away.
+              You're officially part of LinkUp. Your first conversation is just a click away.
             </p>
 
           </td>
@@ -378,7 +378,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
         <tr>
           <td class="pad-sides" style="padding:0 48px 32px 48px; border-bottom:1px solid #2a2a2d;">
             <p style="margin:0 0 16px 0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:15px; color:#aaa; line-height:1.75;">
-              Every great conversation starts somewhere. Relay gives you the space to talk, share, and connect — without the noise.
+              Every great conversation starts somewhere. LinkUp gives you the space to talk, share, and connect — without the noise.
             </p>
             <p style="margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:15px; color:#aaa; line-height:1.75;">
               We've been building this for people who believe the medium shapes the message. We're glad you found us.
@@ -443,7 +443,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
               <tr>
                 <td style="border-radius:10px; background: linear-gradient(135deg, #c9a227 0%, #e6c775 100%);">
                   <a href="${clientURL}" style="display:inline-block; padding:14px 36px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:15px; font-weight:700; color:#0a0a0b; text-decoration:none; border-radius:10px; letter-spacing:0.2px;">
-                    Open Relay &rarr;
+                    Open LinkUp &rarr;
                   </a>
                 </td>
               </tr>
@@ -489,7 +489,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
             <p style="margin:0 0 4px 0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:14px; color:#666; line-height:1.6;">Need a hand? Reply to this email — we're real people who read every message.</p>
             <p style="margin:20px 0 0 0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:15px; color:#aaa;">
               Warmly,<br>
-              <strong style="color:#f0f0f0;">The Relay Team</strong>
+              <strong style="color:#f0f0f0;">The LinkUp Team</strong>
             </p>
           </td>
         </tr>
@@ -505,7 +505,7 @@ export function createWelcomeEmailTemplate(name, clientURL) {
               <a href="#" style="color:#666; text-decoration:none; margin:0 8px;">Unsubscribe</a>
             </p>
             <p style="margin:0; text-align:center; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size:11px; color:#333; line-height:1.6;">
-              &copy; 2025 Relay &nbsp;&bull;&nbsp; Sent from <a href="mailto:noreply@iamrudra.tech" style="color:#444; text-decoration:none;">noreply@iamrudra.tech</a>
+              &copy; 2025 LinkUp &nbsp;&bull;&nbsp; Sent from <a href="mailto:noreply@iamrudra.tech" style="color:#444; text-decoration:none;">noreply@iamrudra.tech</a>
             </p>
           </td>
         </tr>

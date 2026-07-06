@@ -23,7 +23,7 @@ import {
 // ──────────────────────────────────────────────
 // IndexedDB helpers for session-persistent key storage
 // ──────────────────────────────────────────────
-const DB_NAME = 'relay_e2ee';
+const DB_NAME = 'linkup_e2ee';
 const STORE_NAME = 'keys';
 
 function openDB() {
@@ -72,7 +72,7 @@ async function idbClear() {
 // Uses a random AES key stored in sessionStorage
 // to protect keys in IndexedDB.
 // ──────────────────────────────────────────────
-const SESSION_KEY_NAME = 'relay_session_key';
+const SESSION_KEY_NAME = 'linkup_session_key';
 
 async function generateSessionKey() {
   const key = await crypto.subtle.generateKey(

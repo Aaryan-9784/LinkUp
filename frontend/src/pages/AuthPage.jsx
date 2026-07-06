@@ -198,7 +198,7 @@ export default function AuthPage() {
         {/* Brand */}
         <div className="auth-left__brand">
           <Logo size={48} className="auth-left__logo-svg" />
-          <span className="auth-left__name">Relay</span>
+          <span className="auth-left__name">LinkUp</span>
         </div>
 
         {/* Hero text */}
@@ -278,7 +278,7 @@ export default function AuthPage() {
           {/* Mobile-only brand */}
           <div className="auth-mobile-brand" style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', marginBottom: '24px' }}>
             <Logo size={32} />
-            <span className="auth-left__name" style={{ fontSize: '1.3rem' }}>Relay</span>
+            <span className="auth-left__name" style={{ fontSize: '1.3rem' }}>LinkUp</span>
           </div>
 
           {/* Tab switcher */}
@@ -316,7 +316,7 @@ export default function AuthPage() {
               <p className="auth-card__subtitle">
                 {isLogin
                   ? 'Sign in to pick up where you left off'
-                  : 'Join Relay and start messaging in seconds'}
+                  : 'Join LinkUp and start messaging in seconds'}
               </p>
             </motion.div>
           </AnimatePresence>
@@ -425,7 +425,7 @@ export default function AuthPage() {
 
           {/* Footer link */}
           <p className="auth-footer">
-            {isLogin ? 'New to Relay? ' : 'Already have an account? '}
+            {isLogin ? 'New to LinkUp? ' : 'Already have an account? '}
             <button className="auth-footer__link" onClick={toggleMode} type="button">
               {isLogin ? 'Create a free account →' : 'Sign in →'}
             </button>

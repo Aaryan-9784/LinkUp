@@ -1,8 +1,8 @@
-# Relay - Real-Time Chat Application
+# LinkUp - Real-Time Chat Application
 
 <div align="center">
 
-![Relay Logo](frontend/public/relay-icon.svg)
+![LinkUp Logo](frontend/public/LinkUp-icon.svg)
 
 **A modern, zero-knowledge end-to-end encrypted, real-time messaging platform with voice & video calling, built with the MERN stack**
 
@@ -43,11 +43,11 @@
 
 ## 🎯 Overview
 
-**Relay** is a production-ready, full-stack real-time chat application with **zero-knowledge end-to-end encryption** and **peer-to-peer voice & video calling** that enables users to communicate securely through text, image messages, and real-time calls. Built with modern web technologies, it features military-grade encryption, WebRTC calling, responsive design, robust security measures, and seamless real-time updates powered by WebSocket technology.
+**LinkUp** is a production-ready, full-stack real-time chat application with **zero-knowledge end-to-end encryption** and **peer-to-peer voice & video calling** that enables users to communicate securely through text, image messages, and real-time calls. Built with modern web technologies, it features military-grade encryption, WebRTC calling, responsive design, robust security measures, and seamless real-time updates powered by WebSocket technology.
 
 ### 🔐 Privacy & Security First
 
-Relay implements **true zero-knowledge architecture** — your messages are encrypted on your device before transmission, and the server never has access to your private keys or plaintext content. Even if the server is compromised, your conversations remain private.
+LinkUp implements **true zero-knowledge architecture** — your messages are encrypted on your device before transmission, and the server never has access to your private keys or plaintext content. Even if the server is compromised, your conversations remain private.
 
 ### Key Highlights
 
@@ -238,7 +238,7 @@ Relay implements **true zero-knowledge architecture** — your messages are encr
 │  │  - Connection management                                 │  │
 │  │  - Real-time event handling                              │  │
 │  │  - Online users tracking                                 │  │
-│  │  - WebRTC call signaling (SDP/ICE relay)                 │  │
+│  │  - WebRTC call signaling (SDP/ICE LinkUp)                 │  │
 │  └──────────────────────────────────────────────────────────┘  │
 │  ┌──────────────────────────────────────────────────────────┐  │
 │  │  Cleanup Service (Background)                            │  │
@@ -498,8 +498,8 @@ sequenceDiagram
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/relay.git
-cd relay
+git clone https://github.com/yourusername/LinkUp.git
+cd LinkUp
 ```
 
 ### 2. Install Dependencies
@@ -568,9 +568,9 @@ PORT=3000
 NODE_ENV=development
 
 # Database Configuration
-MONGO_URI=mongodb://localhost:27017/relay
+MONGO_URI=mongodb://localhost:27017/LinkUp
 # Or use MongoDB Atlas:
-# MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/relay?retryWrites=true&w=majority
+# MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/LinkUp?retryWrites=true&w=majority
 
 # JWT Configuration
 JWT_SECRET=your_super_secret_jwt_key_change_this_in_production
@@ -578,7 +578,7 @@ JWT_SECRET=your_super_secret_jwt_key_change_this_in_production
 # Email Configuration (Resend)
 RESEND_API_KEY=your_resend_api_key
 SENDER_EMAIL=noreply@yourdomain.com
-SENDER_NAME=Relay Team
+SENDER_NAME=LinkUp Team
 
 # Client Configuration
 CLIENT_URL=http://localhost:5173
@@ -1171,7 +1171,7 @@ Authorization: Required (JWT Cookie)
 | `call:rejected` | `{ callerId }` | Decline an incoming call |
 | `call:offer` | `{ offer, receiverId }` | Send WebRTC SDP offer |
 | `call:answer` | `{ answer, callerId }` | Send WebRTC SDP answer |
-| `call:ice-candidate` | `{ candidate, peerId }` | Relay ICE candidate |
+| `call:ice-candidate` | `{ candidate, peerId }` | LinkUp ICE candidate |
 | `call:toggle-media` | `{ peerId, mediaType, enabled }` | Notify mute/camera toggle |
 | `call:ended` | `{ peerId }` | End the call |
 
@@ -1335,7 +1335,7 @@ Authorization: Required (JWT Cookie)
 
 ### 1. Arcjet Security Suite
 
-Relay implements comprehensive security through Arcjet:
+LinkUp implements comprehensive security through Arcjet:
 
 #### Bot Detection
 - Blocks automated traffic and malicious bots
@@ -1397,7 +1397,7 @@ Relay implements comprehensive security through Arcjet:
 
 ### 6. End-to-End Encryption (E2EE)
 
-Relay implements **true zero-knowledge end-to-end encryption** — the server never has access to plaintext message content or private encryption keys. Even if the server is compromised, your conversations remain private.
+LinkUp implements **true zero-knowledge end-to-end encryption** — the server never has access to plaintext message content or private encryption keys. Even if the server is compromised, your conversations remain private.
 
 #### 🔐 Cryptographic Architecture
 
@@ -1508,7 +1508,7 @@ After signup, users receive a **12-word BIP39 mnemonic** (e.g., `abandon ability
 
 ## 📞 Voice & Video Calling
 
-Relay supports **peer-to-peer voice and video calls** powered by WebRTC, with full call controls including mute, camera toggle, camera flip (mobile), and call duration tracking.
+LinkUp supports **peer-to-peer voice and video calls** powered by WebRTC, with full call controls including mute, camera toggle, camera flip (mobile), and call duration tracking.
 
 ### Architecture
 
@@ -1604,7 +1604,7 @@ iceServers: [
 ### Call Security
 
 - **DTLS-SRTP**: All audio/video media is encrypted in transit by default (WebRTC standard)
-- **Signaling Relay**: The server only relays SDP offers/answers and ICE candidates — never touches actual media
+- **Signaling LinkUp**: The server only relays SDP offers/answers and ICE candidates — never touches actual media
 - **Direct P2P**: Once connected, audio/video flows directly between peers without passing through the server
 
 
@@ -1750,8 +1750,8 @@ npm run build
 
 2. **Clone and Setup**
    ```bash
-   git clone https://github.com/yourusername/relay.git
-   cd relay
+   git clone https://github.com/yourusername/LinkUp.git
+   cd LinkUp
    npm run build
    ```
 
@@ -1759,7 +1759,7 @@ npm run build
    ```bash
    npm install -g pm2
    cd backend
-   pm2 start src/server.js --name relay
+   pm2 start src/server.js --name LinkUp
    pm2 save
    pm2 startup
    ```
@@ -1839,7 +1839,7 @@ vercel --prod
 ## 📁 Project Structure
 
 ```
-relay/
+LinkUp/
 ├── backend/
 │   ├── scripts/
 │   │   ├── cleanupUnverifiedUsers.js  # Manual cleanup script
@@ -1883,7 +1883,7 @@ relay/
 │   ├── public/
 │   │   ├── favicon.svg
 │   │   ├── icons.svg
-│   │   └── relay-icon.svg
+│   │   └── LinkUp-icon.svg
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── call/
@@ -2085,7 +2085,7 @@ if (!isContact) {
 
 ```
 ┌─────────────────────────────────┐
-│  Relay    [+] [📥2] [◄]         │ ← Header with actions
+│  LinkUp    [+] [📥2] [◄]         │ ← Header with actions
 ├─────────────────────────────────┤
 │ [Messages (3)] [All Contacts]   │ ← Two tabs
 ├─────────────────────────────────┤
@@ -2507,7 +2507,7 @@ if (config.isDevelopment()) {
 - [ ] **Image Encryption**: Client-side image encryption before upload
 - [ ] **Group Chats**: Create and manage encrypted group conversations
 - [ ] **Voice Messages**: Record and send encrypted audio messages
-- [ ] **TURN Server**: Relay server for calls behind symmetric NATs
+- [ ] **TURN Server**: LinkUp server for calls behind symmetric NATs
 - [ ] **Call E2EE**: Application-level encryption for calls using WebRTC Insertable Streams
 - [ ] **File Sharing**: Send encrypted documents, PDFs, and other files
 - [ ] **Message Reactions**: React to messages with emojis
@@ -2552,7 +2552,7 @@ Contributions are welcome! Please follow these guidelines:
 
 1. **Fork the repository**
    ```bash
-   git clone https://github.com/yourusername/relay.git
+   git clone https://github.com/yourusername/LinkUp.git
    ```
 
 2. **Create a feature branch**
@@ -2657,7 +2657,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 If you have any questions or need help, please:
 
 1. Check the [Troubleshooting](#-troubleshooting) section
-2. Search existing [GitHub Issues](https://github.com/rudra1806/relay/issues)
+2. Search existing [GitHub Issues](https://github.com/rudra1806/LinkUp/issues)
 3. Open a new issue with detailed information
 4. Contact the author
 
@@ -2673,6 +2673,6 @@ If you found this project helpful, please give it a ⭐️ on GitHub!
 
 **Built with ❤️ by Rudra Sanandiya**
 
-[Report Bug](https://github.com/rudra1806/relay/issues) · [Request Feature](https://github.com/rudra1806/relay/issues)
+[Report Bug](https://github.com/rudra1806/LinkUp/issues) · [Request Feature](https://github.com/rudra1806/LinkUp/issues)
 
 </div>

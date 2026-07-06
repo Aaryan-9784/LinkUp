@@ -8,7 +8,7 @@ export const sendWelcomeEmail = async (name, email, clientURL) => {
         await transporter.sendMail({
             from: `"${sender.name}" <${sender.email}>`,
             to: email,
-            subject: "Welcome to Relay! 🎉",
+            subject: "Welcome to LinkUp! 🎉",
             html: htmlContent,
         });
         console.log(`Welcome email sent to ${email}`);
@@ -24,7 +24,7 @@ export const sendOTPEmail = async (name, email, otp) => {
         await transporter.sendMail({
             from: `"${sender.name}" <${sender.email}>`,
             to: email,
-            subject: "Verify Your Email - Relay",
+            subject: "Verify Your Email - LinkUp",
             html: htmlContent,
         });
         console.log(`OTP email sent to ${email}`);
@@ -41,7 +41,7 @@ export const sendResetPasswordEmail = async (name, email, otp) => {
         await transporter.sendMail({
             from: `"${sender.name}" <${sender.email}>`,
             to: email,
-            subject: "Reset Your Password - Relay",
+            subject: "Reset Your Password - LinkUp",
             html: htmlContent,
         });
         console.log(`Reset password email sent to ${email}`);

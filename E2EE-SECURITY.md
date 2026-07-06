@@ -2,7 +2,7 @@
 
 ## Overview
 
-Relay implements **true zero-knowledge end-to-end encryption** using industry-standard cryptographic primitives. This document explains how your messages are protected and what security guarantees you can expect.
+LinkUp implements **true zero-knowledge end-to-end encryption** using industry-standard cryptographic primitives. This document explains how your messages are protected and what security guarantees you can expect.
 
 ## 🛡️ Security Guarantees
 
@@ -393,10 +393,10 @@ PUT /api/encryption/keys {
 
 ## 🤝 Responsible Disclosure
 
-If you discover a security vulnerability in Relay's encryption implementation, please:
+If you discover a security vulnerability in LinkUp's encryption implementation, please:
 
 1. **DO NOT** disclose publicly until we've had a chance to fix it
-2. Email security details to: [security@relay-chat.app](mailto:security@relay-chat.app)
+2. Email security details to: [security@LinkUp-chat.app](mailto:security@LinkUp-chat.app)
 3. Include steps to reproduce and potential impact
 4. Allow 90 days for us to fix before public disclosure
 

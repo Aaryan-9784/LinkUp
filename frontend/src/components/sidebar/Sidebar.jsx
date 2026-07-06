@@ -183,7 +183,7 @@ export default function Sidebar() {
           <>
             <div className="sidebar__brand">
               <Logo size={24} />
-              <h2 className="sidebar__title">Relay</h2>
+              <h2 className="sidebar__title">LinkUp</h2>
             </div>
             <div className="sidebar__header-actions">
               <button

@@ -135,7 +135,7 @@ const useAuthStore = create((set, get) => ({
         pendingKeyData: null,
       });
       useSocketStore.getState().connectSocket(res.data._id);
-      toast.success('Email verified! Welcome to Relay!');
+      toast.success('Email verified! Welcome to LinkUp!');
       // Return recovery phrase so AuthPage can show the modal
       const recoveryPhrase = get().pendingRecoveryPhrase;
       return { success: true, recoveryPhrase };
