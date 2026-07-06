@@ -8,17 +8,52 @@ export default function Logo({ size = 32, className = "" }) {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Background rounded square */}
-      <rect x="6" y="6" width="108" height="108" rx="28" fill="#3b82f6" />
+      <defs>
+        {/* Blue gradient background */}
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stopColor="#2563eb" />
+          <stop offset="100%" stopColor="#1e40af" />
+        </linearGradient>
 
-      {/* Chain link left */}
-      <rect x="18" y="44" width="38" height="32" rx="16" fill="none" stroke="#ffffff" strokeWidth="9" />
+        {/* Subtle inner glow on bubble */}
+        <filter id="bubbleGlow" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#ffffff" floodOpacity="0.15" />
+        </filter>
+      </defs>
 
-      {/* Chain link right */}
-      <rect x="64" y="44" width="38" height="32" rx="16" fill="none" stroke="#ffffff" strokeWidth="9" />
+      {/* Rounded square background */}
+      <rect x="0" y="0" width="120" height="120" rx="30" fill="url(#bgGrad)" />
 
-      {/* Overlap connector — white fill to show interlocking */}
-      <rect x="55" y="51" width="10" height="18" fill="#3b82f6" />
+      {/* Subtle top-left highlight */}
+      <rect x="0" y="0" width="120" height="120" rx="30"
+        fill="url(#bgGrad)"
+        opacity="1"
+      />
+      <ellipse cx="35" cy="28" rx="38" ry="22" fill="white" opacity="0.07" />
+
+      {/* ── Main speech bubble (large, left-dominant) ── */}
+      <path
+        d="M22 32 C22 25.4 27.4 20 34 20 L80 20 C86.6 20 92 25.4 92 32 L92 62 C92 68.6 86.6 74 80 74 L58 74 L46 86 L46 74 L34 74 C27.4 74 22 68.6 22 62 Z"
+        fill="white"
+        opacity="0.97"
+        filter="url(#bubbleGlow)"
+      />
+
+      {/* ── Small reply bubble (bottom-right) ── */}
+      <path
+        d="M65 78 C65 74.7 67.7 72 71 72 L92 72 C95.3 72 98 74.7 98 78 L98 93 C98 96.3 95.3 99 92 99 L80 99 L80 105 L73 99 L71 99 C67.7 99 65 96.3 65 93 Z"
+        fill="white"
+        opacity="0.35"
+      />
+
+      {/* ── Three dots inside main bubble ── */}
+      <circle cx="42" cy="47" r="5.5" fill="#2563eb" />
+      <circle cx="57" cy="47" r="5.5" fill="#2563eb" />
+      <circle cx="72" cy="47" r="5.5" fill="#2563eb" />
+
+      {/* ── Link indicator — small connection arc on reply bubble ── */}
+      <circle cx="78" cy="85.5" r="3" fill="#93c5fd" opacity="0.85" />
+      <circle cx="86" cy="85.5" r="3" fill="#93c5fd" opacity="0.85" />
     </svg>
   );
 }

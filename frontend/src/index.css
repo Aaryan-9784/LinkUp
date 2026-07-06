@@ -549,3 +549,35 @@ ul, ol {
 .app-loader__dot:nth-child(3) {
   animation-delay: 0.3s;
 }
+
+/* ─── Toast Overrides ─────────────────────────────────────────────── */
+
+/* Container position tweak */
+[data-hot-toast-container] {
+  top: 20px !important;
+  right: 20px !important;
+}
+
+/* Individual toast wrapper */
+[data-hot-toast] > div {
+  animation: toastSlideIn 0.28s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+@keyframes toastSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* Light theme — flip to white card with blue accent */
+[data-theme="light"] [data-hot-toast] > div > div {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-color: rgba(59, 130, 246, 0.18) !important;
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.12), 0 2px 8px rgba(59, 130, 246, 0.1) !important;
+}
