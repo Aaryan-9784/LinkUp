@@ -40,7 +40,7 @@ const features = [
     icon: Zap,
     title: 'Real-time messaging',
     desc: 'Instant delivery with zero lag. Stay in the conversation as it happens.',
-    color: '#3b82f6',
+    color: '#818cf8',
     delay: 0.15,
   },
   {
@@ -54,14 +54,14 @@ const features = [
     icon: Globe,
     title: 'Free forever',
     desc: 'No paywalls, no premium tiers. Full features for every user.',
-    color: '#4ade80',
+    color: '#34d399',
     delay: 0.35,
   },
   {
     icon: Users,
     title: 'Global connectivity',
     desc: 'Connect with anyone, anywhere. The world is your conversation.',
-    color: '#60a5fa',
+    color: '#a78bfa',
     delay: 0.45,
   },
 ];
