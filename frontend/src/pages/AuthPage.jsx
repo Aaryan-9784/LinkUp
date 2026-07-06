@@ -40,14 +40,14 @@ const features = [
     icon: Zap,
     title: 'Real-time messaging',
     desc: 'Instant delivery with zero lag. Stay in the conversation as it happens.',
-    color: '#e8c872',
+    color: '#3b82f6',
     delay: 0.15,
   },
   {
     icon: Shield,
     title: 'End-to-end security',
     desc: 'Your messages are protected. Privacy is not optional here.',
-    color: '#a78bdb',
+    color: '#60a5fa',
     delay: 0.25,
   },
   {

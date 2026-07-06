@@ -26,7 +26,7 @@
   height: 300px;
   top: 20%;
   left: 30%;
-  background: var(--accent-gold-dim);
+  background: var(--accent-primary-dim);
   animation: float 8s ease-in-out infinite;
 }
 
@@ -44,7 +44,7 @@
   height: 150px;
   top: 50%;
   left: 60%;
-  background: var(--accent-gold-dim);
+  background: var(--accent-primary-dim);
   animation: float 12s ease-in-out infinite;
   animation-delay: 2s;
 }

@@ -38,7 +38,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--accent-gold, #e8c872);
+  color: var(--accent-gold, #3b82f6);
   opacity: 0.7;
 }
 
@@ -73,10 +73,10 @@
 
 @keyframes icAvatarGlow {
   0%, 100% {
-    filter: drop-shadow(0 0 10px rgba(232, 200, 114, 0.12));
+    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.12));
   }
   50% {
-    filter: drop-shadow(0 0 20px rgba(232, 200, 114, 0.25));
+    filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.25));
   }
 }
 
@@ -99,7 +99,7 @@
   justify-content: center;
   font-size: 1.875rem;
   font-weight: var(--font-weight-bold, 700);
-  color: var(--accent-gold, #e8c872);
+  color: var(--accent-gold, #3b82f6);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
 }
 

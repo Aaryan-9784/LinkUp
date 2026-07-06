@@ -33,7 +33,7 @@
 /* Focus state — single clean border, NO double ring */
 .relay-input--focused .relay-input__wrapper {
   border-color: var(--accent-gold);
-  box-shadow: 0 0 0 3px rgba(232, 200, 114, 0.1);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
   background: var(--bg-elevated);
 }
 

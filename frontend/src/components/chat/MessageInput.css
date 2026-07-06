@@ -207,13 +207,13 @@
 .msg-input__send--active {
   background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-hover) 100%);
   color: var(--text-inverse);
-  box-shadow: 0 2px 8px rgba(232, 200, 114, 0.3);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
   opacity: 1;
 }
 
 .msg-input__send--active:hover {
   transform: scale(1.08);
-  box-shadow: 0 4px 12px rgba(232, 200, 114, 0.4);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
 .msg-input__send--active:active {

@@ -44,9 +44,9 @@ export default function IncomingCallModal() {
               />
               <defs>
                 <linearGradient id="icGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#e8c872" stopOpacity="0.7" />
-                  <stop offset="50%" stopColor="#a78bdb" stopOpacity="0.35" />
-                  <stop offset="100%" stopColor="#e8c872" stopOpacity="0.7" />
+                  <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.7" />
+                  <stop offset="50%" stopColor="#93c5fd" stopOpacity="0.35" />
+                  <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.7" />
                 </linearGradient>
               </defs>
             </svg>

@@ -17,7 +17,7 @@
 
 .chat-main--empty {
   background:
-    radial-gradient(ellipse at 50% 50%, rgba(232, 200, 114, 0.015) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 50%, rgba(59, 130, 246, 0.04) 0%, transparent 60%),
     var(--bg-primary);
 }
 
